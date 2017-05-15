@@ -18,6 +18,25 @@ $(document).ready(function(){
 
 
 
+
+	// Method 1
+	$("#thing").mouseenter(function(){
+		alert("You entered the thing!");
+	})
+
+	// Method 2
+	$("#thing").mouseleave(function(){
+		alert("You left the thing!");
+	})
+
+
+
+	// Method 3
+	
+
+
+
+
 	$('button').click(function(){
 		// console.log()
 		// console.log($(this).attr('toDO'))
@@ -57,13 +76,14 @@ $(document).ready(function(){
 		else if(whatToDo == 'removeClass'){
 			$('#thing').removeClass('crazy-css')
 		}
-
-
 	});
+});
 
 
 
-})
+
+
+
 
 // // 1. Wait until absolutely everything has loaded
 // $(window).load(function(){
